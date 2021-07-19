@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Leroy Doo Doo At React
+          irman can go kms
         </a>
       </header>
     </div>
