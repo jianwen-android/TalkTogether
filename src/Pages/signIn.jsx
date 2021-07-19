@@ -1,7 +1,3 @@
-
-
-export default function SignInPage({ navigation }){
-    return (
-        <text> Hello </text>
-    );
+export default function SignInPage({ navigation }) {
+  return <text> Hello </text>;
 }
