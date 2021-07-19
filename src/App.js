@@ -1,3 +1,4 @@
+
 import logo from './logo.svg';
 import './App.css';
 import { NavigationContainer } from '@react-navigation/native';
@@ -19,7 +20,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          irman can go kms
+          irman can go kiss me
         </a>
       </header>
     </div>
