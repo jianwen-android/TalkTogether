@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SignInPage from "./Pages/signIn";
@@ -69,9 +69,9 @@ function Home() {
 }
 
 function About() {
-  return <h2>About</h2>;
+  return <h2 className={styles.home}>About</h2>;
 }
 
 function Users() {
-  return <h2>Users</h2>;
+  return <h2 className={styles.home}>Users</h2>;
 }
