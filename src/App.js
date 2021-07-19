@@ -65,7 +65,7 @@ export default function App() {
 }
 
 function Home() {
-  return <h2>Home Pages</h2>;
+  return <h2 className={styles.home}>Home Pages</h2>;
 }
 
 function About() {
