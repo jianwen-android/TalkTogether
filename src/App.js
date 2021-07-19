@@ -1,12 +1,7 @@
-
-import logo from './logo.svg';
-import './App.css';
-import { NavigationContainer } from '@react-navigation/native';
-import SignInPage from './Pages/signIn';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-/*
-
   return (
     <div className="App">
       <header className="App-header">
@@ -25,15 +20,6 @@ function App() {
       </header>
     </div>
   );
-*/
-    return <NavigationContainer>
-      <Stack.Navigator
-      screenOptions={{
-        headerShown: false
-      }}>
-        <Stack.Screen name="signIn" component={SignInPage} />
-      </Stack.Navigator>
-    </NavigationContainer>
 }
 
 export default App;
