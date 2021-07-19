@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import SignInPage from "./Pages/signIn";
 
 export default function App() {
   return (
@@ -28,6 +29,9 @@ export default function App() {
         <nav>
           <ul>
             <li>
+              <Link to="/">SignInPage</Link>
+            </li>
+            <li>
               <Link to="/">Home</Link>
             </li>
             <li>
@@ -49,6 +53,9 @@ export default function App() {
             <Users />
           </Route>
           <Route path="/">
+            <SignInPage />
+          </Route>
+          <Route path="/home">
             <Home />
           </Route>
         </Switch>
