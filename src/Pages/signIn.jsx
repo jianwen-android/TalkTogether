@@ -13,13 +13,6 @@ export default function SignInPage(){
     return (
         <div>
             <h1> Sign In/Up Page Here</h1>
-            <button onClick={this.handleClick}> Go To Home </button>
-
-            <Switch>
-                <Route path="/home">
-                <Home />
-                </Route>
-            </Switch>
         </div>
     );
 }
