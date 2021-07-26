@@ -17,15 +17,6 @@
 }
 #logo {
     width: 100%;
-    animation: coolAnimation 4s;
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
-}
-#logo:hover {
-    width: 100%;
-    animation: coolAnimation 4s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
 }
 @keyframes coolAnimation {
     0% {filter: blur(0px);}
