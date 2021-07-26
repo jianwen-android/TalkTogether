@@ -2,8 +2,11 @@ import "./loginPage.css";
 import React from 'react';
 import aurora from './Images/aurora.svg';
 import logo from './Images/logo.svg';
+import { useHistory } from "react-router";
 
 export default function LoginPage(){
+
+    const history = useHistory();
 
     let emailInput = React.createRef();
     let passwordInput = React.createRef();
@@ -11,6 +14,7 @@ export default function LoginPage(){
     function clicked() {
       console.log("email: " + emailInput.current.value);
       console.log("password: " + passwordInput.current.value);
+      history.push("/class");
     }
 
     return (
