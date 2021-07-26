@@ -26,8 +26,9 @@ export default function LoginPage() {
             <input class="input email" ref={emailInput} placeholder="Email" />
             <input
               class="input password"
-              ref={"*".repeat(str.length)}
+              ref={passwordInput}
               placeholder="Password"
+              type='password'
             />
             <button onClick={clicked} class="button login">
               Login
