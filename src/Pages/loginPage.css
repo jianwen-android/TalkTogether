@@ -17,12 +17,13 @@
 }
 #logo {
     width: 100%;
-    animation: coolAnimation 5s;
+    animation: coolAnimation 4s;
+    animation-iteration-count: infinite;
     animation-play-state: paused;
 }
 #logo:hover {
     width: 100%;
-    animation: coolAnimation 5s;
+    animation: coolAnimation 4s;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
