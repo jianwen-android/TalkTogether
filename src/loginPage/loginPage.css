@@ -1,0 +1,103 @@
+#main {
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#secondary_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+}
+#title {
+  font-size: 55px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#image {
+  width: 100%;
+}
+#logo {
+  width: 100%;
+}
+@keyframes coolAnimation {
+  0% {
+    filter: blur(0px);
+  }
+  10% {
+    filter: blur(1px);
+  }
+  20% {
+    filter: blur(2px);
+  }
+  30% {
+    filter: blur(3px);
+  }
+  40% {
+    filter: blur(4px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  70% {
+    filter: blur(3px);
+  }
+  80% {
+    filter: blur(2px);
+  }
+  90% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+#logins_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 40px;
+}
+#logo_container {
+  flex: 1;
+  padding-left: 40px;
+}
+.Form {
+  height: 50px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 18px;
+  border-radius: 25px;
+  margin-bottom: 6px;
+  border: 0px;
+  font-size: 18px;
+  width: 75%;
+}
+.Login.Button {
+  height: 40px;
+  border-radius: 30px;
+  width: 30%;
+  margin-top: 20px;
+  font-size: 22px;
+  border: 0px;
+  font-weight: 600;
+  justify-items: center;
+  color: white;
+  background: linear-gradient(
+    93.5deg,
+    #7f2e8a 0.7%,
+    #5e50f7 35.35%,
+    #0da1bf 76.21%,
+    #18b495 96.9%
+  );
+}
+.button:hover {
+  filter: brightness(0.8);
+}
+body {
+  background-color: #070033;
+  color: white;
+}
