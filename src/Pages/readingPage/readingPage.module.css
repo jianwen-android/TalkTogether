@@ -25,10 +25,21 @@ body {
 
 #secondarydiv {
     display: flex;
+    flex-direction: row;
     width: 800px;
     justify-content: left;
 }
 
 #buttondiv {
-    height: max-content;
+    display: flex;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#othersecondarydiv {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-content: left;
 }
