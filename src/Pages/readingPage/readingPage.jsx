@@ -1,5 +1,10 @@
 import React from "react";
+import aurora from "./Images/aurora.svg";
 
 export default function Readings() {
-  return <h1>You Read Here</h1>;
+  return (
+    <body>
+      <img src={aurora} id="image" alt="" />
+    </body>
+  )
 }
