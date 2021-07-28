@@ -1,7 +1,13 @@
 import React from "react";
+import styles from "./readingPage.module.css";
+import { Icon } from "@material-ui/core";
+import { IconButton } from '@material-ui/core';
+
 import aurora from "./Images/aurora.svg";
 import preview from "./Images/preview.png";
-import styles from "./readingPage.module.css";
+import pinyin from "./Images/pinyin.svg";
+import dict from "./Images/dict.svg";
+import sound from "./Images/sound.svg";
 
 export default function Readings() {
   return (
@@ -11,10 +17,12 @@ export default function Readings() {
         <img src={preview} id={styles.preview} alt="" />
         <div id={styles.secondarydiv}>
           <div style={{flex: 6}}><h1>假期营于工作坊</h1></div>
-          <div id={styles.buttondiv2}>
-            <button>Sound</button>
-            <button>Dict</button>
-            <button>PINYIN</button>
+          <div id={styles.buttondiv}>
+            <IconButton aria-label="sound" style={{height: 40, width: 40}}><Icon style={{height:40, width:40}}><img src={sound} height={40} width={40} alt=""/></Icon></IconButton>
+            <span>&nbsp;&nbsp;</span>
+            <IconButton aria-label="dict" style={{height: 40, width: 40}}><Icon style={{height:40, width:40}}><img src={dict} height={40} width={40} alt=""/></Icon></IconButton>
+            <span>&nbsp;&nbsp;</span>
+            <IconButton aria-label="pinyin" style={{height: 40, width: 40}}><Icon style={{height:40, width:40}}><img src={pinyin} height={40} width={40} alt=""/></Icon></IconButton>
           </div>
         </div>
         <div id={styles.othersecondarydiv}>
