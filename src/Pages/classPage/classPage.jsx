@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Classes() {
-  return <h1>Classes</h1>;
+  return (
+    <div>
+      <h1> Hello </h1>
+    </div>
+  );
 }
