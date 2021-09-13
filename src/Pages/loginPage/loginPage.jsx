@@ -1,5 +1,5 @@
 import React from "react";
-import "./loginPage.css";
+import styles from "./loginPage.module.css";
 import aurora from "./Images/aurora.svg";
 import logo from "./Images/logo.svg";
 import { useHistory } from "react-router";
@@ -62,13 +62,13 @@ export default function LoginPage() {
 
   return (
     <body>
-      <img src={aurora} id="image" alt="" />
-      <div id="main">
-        <div id="secondary_container">
-          <div id="logins_container">
-            <h1 id="title">Login</h1>
+      <img src={aurora} id={styles.image} alt="" />
+      <div id={styles.main}>
+        <div id={styles.secondary_container}>
+          <div id={styles.logins_container}>
+            <h1 id={styles.title}>Login</h1>
 
-            <input class="input email" ref={emailInput} placeholder="Email" />
+            <input class={styles.input} ref={emailInput} placeholder="Email" />
 
             <FormControl
               className={clsx(classes.margin, classes.textField)}
@@ -99,17 +99,17 @@ export default function LoginPage() {
             </FormControl>
 
             <input
-              class="input password"
+              class={styles.input}
               ref={passwordInput}
               placeholder="Password"
               type="password"
             />
-            <button onClick={clicked} class="button login">
+            <button onClick={clicked} class={styles.button}>
               Login
             </button>
           </div>
-          <div id="logo_container">
-            <img src={logo} id="logo" alt="" />
+          <div id={styles.logo_container}>
+            <img src={logo} id={styles.logo} alt="" />
           </div>
         </div>
       </div>
