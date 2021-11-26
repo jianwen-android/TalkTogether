@@ -4,8 +4,9 @@ import aurora from "./Images/aurora.svg";
 import logo from "./Images/logo.svg";
 import { useHistory } from "react-router";
 
-import clsx from "clsx";
+
 import { makeStyles } from "@material-ui/core/styles";
+{/*}
 import IconButton from "@material-ui/core/IconButton";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -13,7 +14,8 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-
+import clsx from "clsx";
+*/}
 export default function LoginPage() {
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,7 +63,7 @@ export default function LoginPage() {
   };
 
   return (
-    <body>
+    <body id={styles.bg}>
       <img src={aurora} id={styles.image} alt="" />
       <div id={styles.main}>
         <div id={styles.secondary_container}>
@@ -69,7 +71,7 @@ export default function LoginPage() {
             <h1 id={styles.title}>Login</h1>
 
             <input class={styles.input} ref={emailInput} placeholder="Email" />
-
+            {/*
             <FormControl
               className={clsx(classes.margin, classes.textField)}
               variant="outlined"
@@ -97,7 +99,7 @@ export default function LoginPage() {
                 labelWidth={70}
               />
             </FormControl>
-
+              */}
             <input
               class={styles.input}
               ref={passwordInput}

@@ -4,6 +4,7 @@ import LoginPage from "./Pages/loginPage/loginPage";
 import Classes from "./Pages/classPage/classPage";
 import Topics from "./Pages/topicPage/topicPage";
 import Readings from "./Pages/readingPage/readingPage";
+import SignUp from "./Pages/SignUpPage/SignUp"
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
           </Route>
           <Route path="/read" exact>
             <Readings />
+          </Route>
+          <Route path="/signup" exact>
+            <SignUp />
           </Route>
         </Switch>
       </Router>
